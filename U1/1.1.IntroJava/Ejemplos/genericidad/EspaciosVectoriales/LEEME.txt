@@ -1,0 +1,1 @@
+En este caso, la interfaz GeometriaEuclidea extiende a la interfaz Comparable<GeometriaEuclidea> para que luego puedan compararse objetos de clases que extienden (o mejor dicho, implementen) la interfaz GeometriaEuclidea, lo cual puede observarse en los ficheros test\Test2D.java y test\Test3D.java
