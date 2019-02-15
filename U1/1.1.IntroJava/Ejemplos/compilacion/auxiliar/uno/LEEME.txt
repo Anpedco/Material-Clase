@@ -1,0 +1,9 @@
+Compilación:
+
+> javac -d . Clase1.java
+
+ya que según Clase1.java, Clase1 pertenece al paquete lib1 entonces, el la clase resultante de la compilación Clase1.class se ubicará automáticamente en el directorio lib1
+
+A continuación se debe copiar lib1\Clase1.class al directorio lib:
+
+> copy lib1\Clase1.class ..\..\lib\lib1

@@ -1,0 +1,15 @@
+Compilación convencional:
+
+> javac -d . OtraClase.java
+
+Se crea la carpeta nuevaLib conteniendo OtraClase.class. A continuación se comprime la carpeta nuevaLib en formato ".jar", nombrando al fichero comprimido L2.jar
+
+> jar -cf L2.jar nuevaLib
+
+Podemos ver el contenido del fichero:
+
+> jar -tvf L2.jar
+
+A continuación se reubica a lib\otras\libreriasExternas
+
+> copy L2.jar ..\..\lib\otras\librariasExternas

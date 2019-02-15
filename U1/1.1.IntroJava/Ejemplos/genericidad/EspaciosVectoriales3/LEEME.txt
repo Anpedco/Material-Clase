@@ -1,0 +1,3 @@
+En esta tercera versión, también se incluye la posibilidad de trabajar con coordenadas de Boolean. Puede que no tenga sentido físico (o sí), pero en cualquier caso nos encontramos con un problema: Boolean no extiende la clase abstracta Number, luego no nos vale como denominador común. 
+
+Una posible solución es crear una nueva clase que implemente el metodo .doubleValue() y que de alguna forma se comporte de manera especial cuando se quiere instanciar como un Boolean (doubleValue() devolverá un 1 cuando sea true y 0 cuando sea false); si el objeto extiende la clase abstracta Number, entonces, .doubleValue() que devuelva el valor que .doubleValue() devolvía originalmente (véase el fichero Numero.java y obsérvese el operador "instanceof").

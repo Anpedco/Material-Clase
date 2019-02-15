@@ -1,0 +1,11 @@
+Compilación: 
+
+> // cd hasta llegar a wd
+
+> javac  -d  bin  -cp  ..\lib;..\lib\otras\libreriasExternas\L2.jar  -sourcepath  src  src\test\Test.java
+
+Ejecución:
+
+> java -cp ..\lib;..\lib\otras\libreriasExternas\L2.jar;bin   test.Test
+
+
