@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Lista de componentes de un regulador de tensión de 5 V --> 
+<regulador>
+	<condensador tipo="cerámico" fabricante="Murata">
+		C1
+		<valor unidades="uF">0,47</valor>
+		<voltaje unidades="V">50</voltaje>
+		<encapsulado>0805</encapsulado>
+		<disipador></disipador>
+	</condensador>
+	<condensador tipo="electrolítico" fabricante="Murata">
+		C2
+		<valor unidades="uF">0,1</valor>
+		<voltaje unidades="V">12</voltaje>
+		<encapsulado/>
+		<disipador/>
+		<!-- Quizá convendría aumentar la capacidad??? -->
+	</condensador>
+	<circuito_integrado tipo="LM7805" fabricante="Fairchild Semiconductor">
+		IC1
+		<encapsulado>TO220</encapsulado>
+		<disipador>aluminio</disipador>
+	</circuito_integrado>
+</regulador>
