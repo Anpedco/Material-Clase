@@ -1,0 +1,33 @@
+{ "regulador" : 
+    {
+    "condensadores" : [ 
+      {
+        "ID":"C1",  
+        "tipo":"ceramico",
+        "fabricante":"Murata",
+        "valor":{"magnitud":0.47, "unidades":"uF"},
+        "voltaje":{"magnitud":50, "unidades":"V"},
+        "encapsulado":"0805",
+        "disipador":false
+      }, 
+      {
+        "ID":"C2",  
+        "tipo":"electrolitico",
+        "fabricante":"Murata",
+        "valor":{"magnitud":0.1, "unidades":"uF"},
+        "voltaje":{"magnitud":12, "unidades":"V"},
+        "encapsulado":null,
+        "disipador":false
+      }
+    ],
+    "circuitos integrados" : [
+      {
+        "ID":"IC1",
+        "tipo":"LM7805",
+        "fabricante":"Fairchild Semiconductor",
+        "encapsulado":"T0220",
+        "disipador":true
+      }
+    ]
+  }
+}

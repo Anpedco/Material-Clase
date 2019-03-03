@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+   <!ELEMENT biblioteca (libro)* >
+   <!ELEMENT libro ( titulo, autores, fecha, ISBN, 
+                     editorial ) >
+   <!ELEMENT titulo (#PCDATA )>
+   <!ELEMENT autores ( autor+ | anonimo )>
+   <!ELEMENT autor (nombre_de_pila, apellido+) >
+   <!ELEMENT nombre_de_pila (#PCDATA) >
+   <!ELEMENT apellido (#PCDATA) >
+   <!ELEMENT ISBN ( #PCDATA ) >
+   <!ELEMENT editorial ( #PCDATA ) >
+   <!ELEMENT fecha (#PCDATA) >
+   <!ELEMENT anonimo EMPTY>
+   <!ATTLIST biblioteca nombre CDATA #FIXED "UPV">
+   <!ATTLIST titulo idioma (castellano | ingles | 
+           frances | aleman | chino) "castellano">
+   <!ATTLIST libro genero ( policiaco | caballeresco
+      | historia | terror | picaresco )  #IMPLIED>
+]>
+
+<biblioteca>
+
+   <libro genero="caballeresco">
+      <titulo>El ingenioso hidalgo Don Quijote de 
+              La Mancha</titulo>
+      <autores>
+         <autor>
+            <nombre_de_pila>Miguel de</nombre_de_pila>
+            <apellido>Cervantes</apellido>
+            <apellido>Saavedra</apellido>
+         </autor>
+      </autores>
+      <fecha>1605</fecha>
+      <ISBN>123456789X</ISBN>
+      <editorial>Planeta</editorial>
+
+   </libro>
+   <libro genero="picaresco">
+      <titulo>La vida de Lazarillo de Tormes y de sus 
+              fortunas y adversidades</titulo>
+      <autores>
+         <anonimo/>
+      </autores>
+      <fecha>1554</fecha>
+      <ISBN>123456780X</ISBN>
+      <editorial>Juan de Junta, Burgos</editorial>
+   </libro>
+
+</biblioteca>
