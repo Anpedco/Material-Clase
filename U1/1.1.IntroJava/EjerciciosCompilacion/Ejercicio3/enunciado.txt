@@ -1,0 +1,13 @@
+- compilese
+- ejecútese desde src
+- ejecuteste desde src/..
+
+
+- Compilese y ejecutese desde Ejercicio3
+
+
+
+
+compilese src2 y déjese clase junto a .java
+creese jar libreria.jar y dejese en lib
+compilese todo habida cuenta que ahora, Clase2bis llama a clase3
